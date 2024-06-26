@@ -1,0 +1,19 @@
+class Persona {
+  genero: string;
+  edad: number;
+
+  constructor(genero: string, edad: number) {
+    this.genero = genero;
+    this.edad = edad;
+  }
+}
+
+let mundo = {
+  personas: [
+    new Persona('masculino', 30),
+    new Persona('femenino', 25),
+    // Puedes añadir más instancias de Persona aquí según sea necesario
+  ]
+};
+
+console.log(mundo.personas[0].genero); // Ejemplo de acceso a la propiedad 'genero' de la primera persona en 'mundo'
